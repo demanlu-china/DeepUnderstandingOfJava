@@ -1,5 +1,7 @@
 package com.demanmath.deepjava
 
+import com.demanmath.deepjava.cache.CacheShow
+import com.demanmath.deepjava.cache.ConstantShow
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -13,5 +15,14 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
+    }
+
+    @Test
+    fun run(){
+        var cacheShow = CacheShow()
+        cacheShow.fun1()
+
+        var constantShow = ConstantShow()
+        constantShow.`fun`()
     }
 }
